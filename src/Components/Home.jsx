@@ -40,7 +40,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/user/jobDetails"
+          "https://skill-genic.onrender.com/user/jobDetails"
         );
         setJobsDetails(response.data || []);
       } catch (error) {
@@ -58,7 +58,7 @@ const Home = () => {
   const submit = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/admin/createJob",
+        "https://skill-genic.onrender.com/user/createJob",
         data,
         {
           headers: {
